@@ -1,7 +1,10 @@
-#### INSTALL
+#### About
 
-- npm i tailwindcss postcss autoprefixer -D
-- npm i @apollo/client graphql
+- React + Typeccript
+- TailwindCss
+- GraphQL
+- Apollo
+- GraphCMS
 
 ###### GraphQL:
 
