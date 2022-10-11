@@ -3,7 +3,7 @@ import { FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Logo } from "../components/Logo";
 
-const CREATE_USER_MUTATION = gql`
+const CREATE_SUBSCRIBER_MUTATION = gql`
   mutation CreateSubscriber($name: String!, $email: String!) {
     createSubscriber(data: { name: $name, email: $email }) {
       id
@@ -16,7 +16,7 @@ export const Home = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
-  const [createUser] = useMutation(CREATE_USER_MUTATION);
+  const [createUser, { loading }] = useMutation(CREATE_SUBSCRIBER_MUTATION);
 
   const handleUser = (event: FormEvent) => {
     event.preventDefault();
@@ -67,7 +67,8 @@ export const Home = () => {
             />
             <button
               type="submit"
-              className="mt-4 bg-green-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors"
+              disabled= {loading}
+              className="mt-4 bg-green-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors disabled:bg-green-300"
             >
               Entrar!!
             </button>
