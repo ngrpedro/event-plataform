@@ -1,7 +1,7 @@
 #### INSTALL
 
-npm i tailwindcss postcss autoprefixer -D
-npm i @apollo/client graphql
+- npm i tailwindcss postcss autoprefixer -D
+- npm i @apollo/client graphql
 
 - GraphQL: protocolo de comunicação
   - Recebe informações de varias fontes
