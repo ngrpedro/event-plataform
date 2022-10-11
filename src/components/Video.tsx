@@ -5,7 +5,8 @@ import {
   CaretRight,
   DiscordLogo,
   FileArrowDown,
-  Lightning
+  Lightning,
+  Spinner
 } from "phosphor-react";
 
 const GET_LESSON_BY_SLUG_QUERY = gql`
@@ -48,7 +49,11 @@ export const Video = (props: VideoProps) => {
   });
 
   if (!data) {
-    return <div className="flex-1">Carregando</div>;
+    return (
+      <div className="flex-1 flex flex-col items-center justify-center text-2xl gap-10">
+        Carregando <Spinner className="animate-spin" size={28} />
+      </div>
+    );
   }
 
   return (

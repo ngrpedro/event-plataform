@@ -14,11 +14,11 @@ export const Event = () => {
           <Video lessonSlug={slug} />
         ) : (
           <div className="flex-1 flex items-center justify-center">
-            <div className="flex flex-col items-center justify-center">
-              <strong>
+            <div className="flex flex-col items-center justify-center gap-20">
+              <strong className="text-2xl">
                 Selecione ao lado uma aula para iniciar os estudos!!!
               </strong>
-              <ArrowFatRight size={28} />
+              <ArrowFatRight className="animate-ping" size={28} />
             </div>
           </div>
         )}
