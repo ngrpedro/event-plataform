@@ -1,4 +1,4 @@
-#### About
+#### All About Event Plataform - Ignite Lag | Rocketseat
 
 - React + Typeccript
 - TailwindCss
