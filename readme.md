@@ -14,3 +14,9 @@ npm i @apollo/client graphql
 
 Comunicação com API GraphQL ta quebrada (<Home />)
 https://app.rocketseat.com.br/plus/lesson/ignite-lab-react-js-or-aula-4-inscricao-via-graph-ql (faltam 20min)
+
+- GraphQL: protocolo de comunicação
+  - GraphCMS - Ferramenta de dados
+- APOLLO: conjunto de ferramentas para trabalhar com GraphQL (/lib/apollo.ts => Arquivo de configuração/Comunicação GraphCMS)
+  - Apollo server: Criar APIs
+  - Apollo client: Conecta o front-end com a API
