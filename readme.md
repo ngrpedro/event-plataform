@@ -1,10 +1,8 @@
-Desenvolvimento de uma plataforma de vídeos.
+Desenvolvimento de uma plataforma de vídeos. 
+Integração com cms usando graphql 
 
 Front-end: 
-- React + Typeccript
-- TailwindCss
+- React + TypeScript
+- TailwindCSS
 - GraphQL
-
-Back-end:
-- GraphCMS
 
