@@ -29,14 +29,20 @@ export const Home = () => {
   };
 
   return (
-    <div className="h-screen flex items-center bg-gradient-to-r from-gray-500 to-gray-900">
-      <div className="px-24 w-full flex items-start justify-between mt-20 mx-auto">
+    <div
+      className="h-screen flex items-center 
+              bg-gradient-to-r from-gray-500 to-gray-900"
+    >
+      <div className="px-16 max-w-[80rem] flex flex-col sm:flex-row gap-10
+              items-start justify-between mx-auto">
         <div className="max-w-[640px]">
           <div className="flex items-center justify-start">
             <h1 className="block pr-3 text-2xl font-bold border-r-4 border-green-700">
               PEDRO SOARES
             </h1>
-            <h2 className="block px-3 text-2xl font-bold">React + Typescript</h2>
+            <h2 className="block px-3 text-2xl font-bold">
+              React + Typescript
+            </h2>
           </div>
           <h1 className="mt-8 text-[2rem] leading-tight">
             <strong className="text-blue-500">

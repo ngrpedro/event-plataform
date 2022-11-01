@@ -28,7 +28,7 @@ export const Sidebar = () => {
   console.log(data);
 
   return (
-    <aside className="w-[348px] p-6 border-l border-gray-600
+    <aside className="hidden lg:block w-[348px] p-6 border-l border-gray-600
     bg-gradient-to-b from-gray-600 to-gray-900">
       <div className="p-4 rounded-md shadow-gray-600 border border-gray-600 
                bg-gray-900 shadow-md sticky top-6">
