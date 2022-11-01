@@ -8,5 +8,5 @@ Front-end:
 - GraphQL
 
 <p>
-  <img src="./src/assets/video-plataform.png" width="350" title="hover text">
+  <img src="./src/assets/video-plataform.png" width="500" title="hover text">
 </p>
