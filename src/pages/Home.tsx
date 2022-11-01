@@ -1,7 +1,6 @@
 import { gql, useMutation } from "@apollo/client";
 import { FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Logo } from "../components/Logo";
 
 const CREATE_SUBSCRIBER_MUTATION = gql`
   mutation CreateSubscriber($name: String!, $email: String!) {
@@ -30,19 +29,22 @@ export const Home = () => {
   };
 
   return (
-    <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
-      <div className="px-24 w-full flex items-center justify-between mt-20 mx-auto">
+    <div className="h-screen flex items-center bg-gradient-to-r from-gray-500 to-gray-900">
+      <div className="px-24 w-full flex items-start justify-between mt-20 mx-auto">
         <div className="max-w-[640px]">
-          <Logo />
-          <h1 className="mt-8 text-[2.5rem] leading-tight">
-            Fiz uma aplicação,{" "}
-            <strong className="text-blue-500">DO ZERO</strong>, com{" "}
+          <div className="flex items-center justify-start">
+            <h1 className="block pr-3 text-2xl font-bold border-r-4 border-green-700">
+              PEDRO SOARES
+            </h1>
+            <h2 className="block px-3 text-2xl font-bold">React + Typescript</h2>
+          </div>
+          <h1 className="mt-8 text-[2rem] leading-tight">
             <strong className="text-blue-500">
-              ReactJS + Typescript + TailwdidCss
+              ReactJS + Typescript + TailwindCSS
             </strong>
           </h1>
           <p className="mt-4 text-gray-200 leading-relaxed">
-            Em apenas algumas aulas fizemos uma aplicação em React usando
+            Com apenas algumas aulas construí uma aplicação em React usando
             algumas tecnologias do momento. Teve GraphQL, Typescript,
             TailwindCss entre outros...
           </p>
@@ -54,20 +56,20 @@ export const Home = () => {
           </strong>
           <form onSubmit={handleUser} className="flex flex-col gap-2 w-full">
             <input
-              className="bg-gray-900 rounded px-5 h-14"
+              className="bg-gray-500 rounded px-5 h-14"
               type="text"
               placeholder="Qual seu nome?"
               onChange={(event) => setName(event.target.value)}
             />
             <input
-              className="bg-gray-900 rounded px-5 h-14"
+              className="bg-gray-500 rounded px-5 h-14"
               type="email"
-              placeholder="Qual seu nome?"
+              placeholder="Qual seu email?"
               onChange={(event) => setEmail(event.target.value)}
             />
             <button
               type="submit"
-              disabled= {loading}
+              disabled={loading}
               className="mt-4 bg-green-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors disabled:bg-green-300"
             >
               Entrar!!
@@ -75,7 +77,6 @@ export const Home = () => {
           </form>
         </div>
       </div>
-      <img src="/src/assets/codemockup.png" alt="mockup" className="mt-10" />
     </div>
   );
 };

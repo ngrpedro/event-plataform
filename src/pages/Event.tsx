@@ -18,7 +18,11 @@ export const Event = () => {
               <strong className="text-2xl">
                 Selecione ao lado uma aula para iniciar os estudos!!!
               </strong>
-              <ArrowFatRight className="animate-ping" size={28} />
+              <div className="relative">
+                <ArrowFatRight className="absolute top-0" size={28} />
+
+                <ArrowFatRight className="animate-ping" size={28} />
+              </div>
             </div>
           </div>
         )}
