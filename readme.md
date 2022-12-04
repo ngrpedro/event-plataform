@@ -1,14 +1,21 @@
-Desenvolvimento de uma plataforma de vídeos.
-Integração com cms usando graphql
+## Step by step
 
-Front-end:
+```sh
+git clone https://github.com/ngrpedro/event-plataform.git
+```
 
-- React + TypeScript
-- TailwindCSS
-- GraphQL
+```sh
+cd event-plataform
+```
 
-Visite o app > <a href="https://video-plataform-alpha.vercel.app/">https://video-plataform-alpha.vercel.app/</a>
+```sh
+npm install
+```
 
-<p>
-  <img src="./src/assets/video-plataform.png" width="500" title="hover text">
-</p>
+```sh
+npm run dev
+```
+
+
+Access the project
+[http://localhost:3000](http://localhost:3000)
